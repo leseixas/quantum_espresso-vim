@@ -8,6 +8,7 @@ if exists("b:current_syntax")
 endif
 
 " Comment
+syntax keyword espressoTODO contained TODO FIXME XXX NOTE
 syntax match espressoComment "!.*$"
 
 " Integer with +,- or nothing in front
@@ -73,3 +74,4 @@ hi def link espressoKey         Statement
 hi def link espressoNumber      Constant
 hi def link espressoString      Type
 hi def link espressoBoolean     Constant
+hi def link espressoComment     Comment
