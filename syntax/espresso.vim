@@ -7,6 +7,9 @@ if exists("b:current_syntax")
   finish
 endif
 
+" Comment
+syntax match espressoComment "!.*$"
+
 " Integer with +,- or nothing in front
 syntax match espressoNumber '\d\+'
 syntax match espressoNumber '[-+]\d\+'
