@@ -1,4 +1,4 @@
-# Vim syntax for Quantum ESPRESSO suite #
+# Quantum ESPRESSO syntax for Vim #
 
 
 git clone git@github.com:leseixas/quantum_espresso-vim.git
