@@ -9,7 +9,7 @@ endif
 
 " Comment
 syntax keyword espressoTODO contained TODO FIXME XXX NOTE
-syntax match espressoComment "!.*$"
+syntax match espressoComment '!.*$'
 
 " Integer with +,- or nothing in front
 syntax match espressoNumber '\d\+'
@@ -32,12 +32,15 @@ syntax match espressoBoolean '\.[fF][aA][lL][sS][eE]\.'
 
 " CONTROL namelist
 syntax keyword espressoNameDesc CONTROL SYSTEM ELECTRONS IONS CELL skipwhite
+"    espressoString
 syntax keyword espressoKey calculation prefix title verbosity nextgroup=espressoString skipwhite
-syntax keyword espressoKey restart_mode pseudo_dir wf_collect outdir wfcdir nextgroup=espressoString skipwhite
-syntax keyword espressoKey tstress tprnfor lkpoint_dir nextgroup=espressoBoolean skipwhite
+syntax keyword espressoKey restart_mode pseudo_dir outdir wfcdir disk_io nextgroup=espressoString skipwhite
+"    espressoBoolean
+syntax keyword espressoKey tstress tprnfor lkpoint_dir wf_collect nextgroup=espressoBoolean skipwhite
+syntax keyword espressoKey tefield dipfield lelfield lorbm lberry lfcpopt nextgroup=espressoBoolean skipwhite
+"    espressoNumber
 syntax keyword espressoKey etot_conv_thr forc_conv_thr dt max_seconds nstep nextgroup=espressoNumber skipwhite
-syntax keyword espressoKey disk_io tefield dipfield lelfield lorbm lberry nextgroup=espressoBoolean skipwhite
-syntax keyword espressoKey iprint nberrycyc gdir nppstr lfcpopt nextgroup=espressoNumber skipwhite
+syntax keyword espressoKey iprint nberrycyc gdir nppstr nextgroup=espressoNumber skipwhite
 
 " SYSTEM namelist
 syntax keyword espressoKey ibrav nat ntyp nspin nbnd tot_charge tot_magnetization report use_all_frac Hubbard_U Hubbard_J0 Hubbard_alpha Hubbard_beta nextgroup=espressoNumber skipwhite
@@ -73,5 +76,5 @@ hi def link espressoNamelist    PreProc
 hi def link espressoKey         Statement
 hi def link espressoNumber      Constant
 hi def link espressoString      Type
-hi def link espressoBoolean     Constant
+hi def link espressoBoolean     PreProc
 hi def link espressoComment     Comment
