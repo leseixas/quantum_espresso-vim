@@ -4,20 +4,22 @@
 
 ### Manual ###
 
-> mkdir ~/.vim  
-> mkdir ~/.vim/ftdetect  
-> mkdir ~/.vim/syntax
+---
+        mkdir ~/.vim
+        mkdir ~/.vim/ftdetect
+        mkdir ~/.vim/syntax
+- - -
 
-> cp ftdetect/espresso.vim ~/.vim/ftdetect/espresso.vim  
-> cp syntax/espresso.vim ~/.vim/syntax/espresso.vim
+        cp ftdetect/espresso.vim ~/.vim/ftdetect/espresso.vim
+        cp syntax/espresso.vim ~/.vim/syntax/espresso.vim
 
 ### Using *install.sh* script ###
 
 
 ### Vim with Janus ###
 
-> cd ~/.vim/janus/vim/langs  
-> git clone https://github.com/leseixas/quantum_espresso-vim.git
+        cd ~/.vim/janus/vim/langs
+        git clone https://github.com/leseixas/quantum_espresso-vim.git
 
 ## File detection  ##
 
