@@ -16,7 +16,7 @@
 
 ### Vim with Janus ###
 
-> cd ~/.vim/janus/vim/langs
+> cd ~/.vim/janus/vim/langs  
 > git clone https://github.com/leseixas/quantum_espresso-vim.git
 
 ## File detection  ##
