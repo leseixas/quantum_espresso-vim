@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language: Quantum Espresso
 " Maintainer: Leandro Seixas Rocha <seixasle@gmail.com>
-" Last Change: 2015 dec 09
+" Last Change: 2015 Dec 12
 
 if exists("b:current_syntax")
   finish
