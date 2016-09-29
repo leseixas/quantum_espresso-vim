@@ -13,6 +13,12 @@
 
 ### Using *install.sh* script ###
 
+        sh install.sh
+
+or
+
+       chmod +x install.sh
+       ./install.sh
 
 ### Vim with Janus ###
 
