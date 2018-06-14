@@ -68,7 +68,7 @@ syntax keyword espressoKey press cell_factor press_conv_thr wmass nextgroup=espr
 " CONSTRAINTS card
 "syntax keyword espressoKey 
 
-syntax region espressoNamelist start="&" end="/" fold transparent contains=espressoNumber,espressoKey,espressoString,espressoBoolean
+syntax region espressoNamelist start="&" end="/" fold transparent contains=espressoNumber,espressoKey,espressoString,espressoBoolean,espressoComment
 
 let b:current_syntax = "espresso"
 
